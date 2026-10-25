@@ -1,0 +1,84 @@
+@mixin hdjcfdai($d,$f,$r,$a,$m){
+    height: $d;
+    display: $f;
+    justify-content: $r;
+    flex-direction: $a;
+    align-items: $m;
+}
+
+@mixin dfdpbbgrg($d,$f,$r,$a,$m,$w){
+    display: $d;
+    flex-direction: $f;
+    padding: $r;
+    border: $a;
+    background: $m;
+    row-gap: $w;
+}
+
+@mixin pw($d,$f){
+    padding: $d;
+    width: $f;
+}
+
+@mixin pos($d){ 
+    position: $d;
+}
+
+@mixin cp($d){
+    cursor: $d;
+}
+
+@mixin whrt($w, $h, $r, $t){
+    width: $w;
+    height: $h;
+    right: $r;
+    top: $t;
+}
+
+@mixin p($d){
+    padding: $d;
+}
+
+@mixin m($d){
+    margin: $d;
+}
+
+* {
+    @include m(0);
+    @include p(0);
+    box-sizing: border-box;
+}
+
+body {
+    @include hdjcfdai(100vh, flex, center, column, center);
+}
+
+button {
+    @include cp(pointer);
+}
+
+.login-form {
+    @include dfdpbbgrg(flex, column, 10px, 2px solid black, black, 10px);
+}
+
+.username-input {
+    @include pw(10px 4px, 250px);
+}
+
+.secret-input {
+    @include pw(10px 4px, 250px);
+}
+
+.login-button {
+    @include p(10px 4px);
+}
+
+.password-box {
+    @include pos(relative);
+}
+
+.torch-icon {
+    @include pos(absolute);
+    @include whrt(25px, 25px, 10px, 6px);
+    @include cp(pointer);
+}

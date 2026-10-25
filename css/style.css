@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid black;
+  background: black;
+  row-gap: 10px;
+}
+
+.username-input {
+  padding: 10px 4px;
+  width: 250px;
+}
+
+.secret-input {
+  padding: 10px 4px;
+  width: 250px;
+}
+
+.login-button {
+  padding: 10px 4px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.torch-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  top: 6px;
+  cursor: pointer;
+}
