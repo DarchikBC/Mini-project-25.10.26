@@ -1,12 +1,47 @@
-
-body{
-    background: url('../magic-cab.avif') no-repeat center/cover;
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a url('../magic-cab.avif') no-repeat center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
-.treasure{
+
+.treasure {
    width: 400px;
+   pointer-events: none; 
+}
+
+#score-board {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.coin {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffd700;
+    border-radius: 50%;
+    border: 3px solid #b8860b;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #b8860b;
+    font-size: 20px;
+    user-select: none;
 }
