@@ -1,3 +1,4 @@
+
 @mixin hdjcfdai($d,$f,$r,$a,$m){
     height: $d;
     display: $f;
@@ -41,6 +42,10 @@
 
 @mixin m($d){
     margin: $d;
+}
+
+body{
+    background: url('../magic-cab.avif') no-repeat center/cover;
 }
 
 * {
